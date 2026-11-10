@@ -16,10 +16,10 @@ Abra `index.html` con doble clic. Todo funciona sin servidor.
 
 ```
 index.html                Inicio
-credito-vivienda.html     (pendiente)
-credito-vehiculo.html     (pendiente)
-asesorias-consumo.html    (pendiente)
-nosotros.html             (pendiente)
+credito-vivienda.html     Crédito de vivienda
+credito-vehiculo.html     Crédito de vehículo
+asesorias-consumo.html    Asesorías y consumo
+nosotros.html             Nosotros
 css/estilos.css           estilos compartidos y variables (colores, tipografía, espacios, radio)
 js/sitio.js               menú móvil, WhatsApp, simulador y formulario de llamada
 referencia/               wireframes originales; no se publican como páginas del sitio
@@ -55,6 +55,10 @@ Los mensajes precargados de WhatsApp están en cada botón, en el atributo `data
   - Las fechas se precargan con el próximo día hábil y tres días después, para que nunca arranquen en el pasado. El texto de ejemplo del wireframe se conserva tal cual.
   - El aviso del sábado aparece en cuanto el rango incluye un sábado. Si el rango tiene solo sábados (y domingos) y la franja queda fuera de 9:00 a. m. a 1:00 p. m., no se deja enviar.
   - Al enviar, la confirmación aparece en la misma página con un botón «Enviar mi solicitud por WhatsApp» que abre el mensaje armado.
+- **Pie de página:** es igual en las 5 páginas. Se usó el del Inicio, que incluye «[ Canales oficiales ]».
+- **Cierres con selector de tema** (Vivienda, Vehículo, Nosotros): el botón «Escribir por WhatsApp» cambia el mensaje según la opción elegida.
+- **Plazos sin confirmar** (Vehículo y Asesorías): el simulador calcula a 60 meses hasta que el cliente confirme los plazos.
+- **Nosotros:** el rótulo «Lo que sí hacemos» pasó de verde a gris oscuro, para respetar la paleta. El carrusel se detiene al pasar el mouse o al recibir el foco, y con «reducir movimiento» queda quieto y se desliza a mano.
 - **Textos nuevos:** los mensajes de error y de confirmación de los formularios son nuevos (no existían en el wireframe). Están escritos con «usted».
 - **Colores:** además de los cinco de la paleta, se conservan los neutros de apoyo que ya traía el wireframe (fondos de foto, textos sobre fondo oscuro). El borde de los campos se oscureció un poco (#8C8C86) para que cumpla contraste AA.
 - **Accesibilidad:** enlace «Ir al contenido», foco visible en fondo claro y oscuro, etiquetas en todos los campos, errores anunciados por lector de pantalla y áreas táctiles de 44 px o más.
